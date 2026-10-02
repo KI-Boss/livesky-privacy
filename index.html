@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveSky — Privacy Policy</title>
+<style>
+  :root { --bg:#fafafa; --fg:#1d1d1f; --muted:#6e6e73; --accent:#0A84FF; --card:#fff; --line:#e5e5ea; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111214; --fg:#f2f2f7; --muted:#a1a1a6; --accent:#409cff; --card:#1c1c1e; --line:#2c2c2e; color-scheme: dark; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+  h1 { font-size:28px; font-weight:600; margin:0 0 4px; }
+  h2 { font-size:19px; font-weight:600; margin:36px 0 8px; }
+  p, li { margin:0 0 10px; }
+  ul { padding-left:22px; }
+  .muted { color:var(--muted); font-size:14px; }
+  .summary { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin-top:24px; }
+  a { color:var(--accent); }
+  code { font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>LiveSky — Privacy Policy</h1>
+  <p class="muted">Last updated: 2 October 2026</p>
+
+  <div class="summary">
+    <p><strong>In short:</strong> LiveSky has no accounts, no ads, no analytics and no
+    tracking, and the developer runs no servers. Your settings stay on your device.
+    To show aircraft, your browser requests public flight data for the map area you
+    selected directly from adsb.fi. The settings map loads its tiles from OpenStreetMap.</p>
+  </div>
+
+  <h2>What LiveSky stores on your device</h2>
+  <p>All settings are kept in your browser's local extension storage
+  (<code>chrome.storage.local</code>) and never leave your device:</p>
+  <ul>
+    <li>the map area you watch (center coordinates and zoom scale),</li>
+    <li>appearance settings (icon size, colors, opacity, heatmap on/off),</li>
+    <li>whether the overlay is enabled globally, and the addresses (origins) of
+      websites where you switched it on or off individually,</li>
+    <li>your location pin, only while it is shown, if you used “Find my location”
+      (see below).</li>
+  </ul>
+  <p>Removing the extension deletes this data.</p>
+
+  <h2>What leaves your device</h2>
+  <p><strong>Flight data requests to adsb.fi.</strong> While a browser tab with the
+  overlay is visible, LiveSky requests aircraft positions from the public
+  <a href="https://adsb.fi" rel="noopener">adsb.fi</a> Open Data API every few seconds.
+  Each request contains the center coordinates of your selected map area, rounded
+  to about 1 km, and a search radius. It also carries the extension's
+  name and version and the developer's contact address, as requested by adsb.fi —
+  no information about you. As with any web request, adsb.fi can see your IP address.
+  No requests are made while no overlay tab is visible.</p>
+  <p><strong>Map tiles from OpenStreetMap.</strong> When you open the toolbar popup or
+  the settings page, the map loads its images from the OpenStreetMap tile servers
+  (<code>tile.openstreetmap.org</code>), which can see your IP address and the map
+  area you view. See the
+  <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">OpenStreetMap Foundation privacy policy</a>.
+  Map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors.</p>
+  <p>LiveSky does not read the content of the websites you visit and does not send
+  your browsing history or any page addresses anywhere.</p>
+
+  <h2>Your location</h2>
+  <p>Only when you click "Find my location" on the settings page does LiveSky
+  look up your current position - once per click, never automatically and never
+  in the background. It centers your watched area on your position and marks it
+  with a pin on the map. The exact position is stored only on your device. To
+  fetch flight data, the center of your watched area, rounded to about 1 km, is
+  sent to adsb.fi, so after a location lookup this is your approximate position.
+  This feature requires the "Detect your physical location" permission that
+  Chrome shows at installation; it ends when you disable or remove LiveSky.</p>
+  <p>Additional details: the exact position is stored only while the location pin
+  is shown. Switching off “Show my location” deletes it from your device; a new
+  lookup replaces it. Because your watched area is centered on your position, that
+  area (your approximate location) remains saved among your settings until you
+  move the map to another area, and its rounded center is sent to adsb.fi as
+  described above. Your location is not logged and not sent anywhere else.</p>
+
+  <h2>Limited Use</h2>
+  <p>The use of information received by LiveSky complies with the
+  <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" rel="noopener">Chrome Web Store User Data Policy</a>,
+  including the Limited Use requirements. Data is used only to provide the
+  extension's single purpose — showing nearby aircraft on your screen — and is
+  never sold, transferred for advertising, or used to determine creditworthiness.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: constantin.ottner@gmail.com</p>
+
+  <h2>Changes</h2>
+  <p>If LiveSky's handling of data changes, this page will be updated before the
+  new version is published.</p>
+</main>
+</body>
+</html>
