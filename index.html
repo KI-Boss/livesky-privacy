@@ -35,7 +35,8 @@
 
   <h2>What LiveSky stores on your device</h2>
   <p>All settings are kept in your browser's local extension storage
-  (<code>chrome.storage.local</code>) and never leave your device:</p>
+  (<code>chrome.storage.local</code>). Apart from the rounded area center used for
+  flight data requests (see below), they never leave your device:</p>
   <ul>
     <li>the map area you watch (center coordinates and zoom scale),</li>
     <li>appearance settings (icon size, colors, opacity, heatmap on/off),</li>
@@ -80,13 +81,16 @@
   position from your device; a new lookup replaces it. The watched area is
   centered on your position rounded to about 1 km, so only this approximate
   location remains saved among your settings until you move the map to another
-  area. Your location is not logged and not sent anywhere else.</p>
+  area. Your location is not logged. Besides adsb.fi, only OpenStreetMap can
+  infer it: the map then shows the area around your position, and its tiles are
+  loaded from OpenStreetMap (see above).</p>
 
   <h2>Limited Use</h2>
   <p>The use of information received by LiveSky complies with the
   <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" rel="noopener">Chrome Web Store User Data Policy</a>,
   including the Limited Use requirements. Data is used only to provide the
-  extension's single purpose — showing nearby aircraft on your screen — and is
+  extension's single purpose — showing aircraft in the map area you selected on
+  the web pages you view — and is
   never sold, transferred for advertising, or used to determine creditworthiness.</p>
 
   <h2>Contact</h2>
