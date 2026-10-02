@@ -62,23 +62,25 @@
   <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">OpenStreetMap Foundation privacy policy</a>.
   Map data © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors.</p>
   <p>LiveSky does not read the content of the websites you visit and does not send
-  your browsing history or any page addresses anywhere.</p>
+  your browsing history or any page addresses anywhere. On each page it only adds
+  its own transparent drawing layer and reads the page's origin (for example
+  <code>https://example.com</code>) to apply your per-site setting.</p>
 
   <h2>Your location</h2>
   <p>Only when you click "Find my location" on the settings page does LiveSky
   look up your current position - once per click, never automatically and never
   in the background. It centers your watched area on your position and marks it
-  with a pin on the map. The exact position is stored only on your device. To
-  fetch flight data, the center of your watched area, rounded to about 1 km, is
-  sent to adsb.fi, so after a location lookup this is your approximate position.
-  This feature requires the "Detect your physical location" permission that
-  Chrome shows at installation; it ends when you disable or remove LiveSky.</p>
-  <p>Additional details: the exact position is stored only while the location pin
-  is shown. Switching off “Show my location” deletes it from your device; a new
-  lookup replaces it. Because your watched area is centered on your position, that
-  area (your approximate location) remains saved among your settings until you
-  move the map to another area, and its rounded center is sent to adsb.fi as
-  described above. Your location is not logged and not sent anywhere else.</p>
+  with a pin on the map. The exact position is stored only on your device, and
+  only while the pin is shown. To fetch flight data, the center of your watched
+  area, rounded to about 1 km, is sent to adsb.fi, so after a location lookup
+  this is your approximate position. This feature requires the "Detect your
+  physical location" permission that Chrome shows at installation; it ends when
+  you disable or remove LiveSky.</p>
+  <p>Additional details: switching off “Show my location” deletes the exact
+  position from your device; a new lookup replaces it. The watched area is
+  centered on your position rounded to about 1 km, so only this approximate
+  location remains saved among your settings until you move the map to another
+  area. Your location is not logged and not sent anywhere else.</p>
 
   <h2>Limited Use</h2>
   <p>The use of information received by LiveSky complies with the
